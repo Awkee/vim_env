@@ -18,20 +18,16 @@ call vundle#begin()
 " let Vundle manage Vundle, required
 Plugin 'VundleVim/Vundle.vim'
 
-" All of your Plugins must be added before the following line
 
+""""""" 个性化选择插件列表 """"""""""
 Plugin 'Valloric/YouCompleteMe'
 Plugin 'scrooloose/nerdtree'
-"Plugin 'syntastic'
-"Plugin 'indentpython.vim'
 Plugin 'Python-mode-klen'
 Plugin 'taglist.vim'
+Plugin 'flazz/vim-colorschemes'
 
 
-
-
-
-
+" All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""" Vundle
@@ -187,6 +183,8 @@ let Tlist_Enable_Fold_Column = 0    " 不要显示折叠树
 
 autocmd FileType h,cpp,cc,c,java,py set tags+=./tags
 
+""""""  flazz/vim-colorschemes """""""""""""""
+colorscheme wombat
 
 
 " Python语法高亮
