@@ -95,7 +95,8 @@ imap <C-Left> <ESC>:tabp<CR>
 """"""" 自动保存视图""""""""""""""""""""""""""""""""""""""""""""""
 au BufWinLeave *.py silent mkview
 au BufWinLeave *vimrc silent mkview
-au BufWinEnter * silent loadview
+au BufWinEnter *.* silent loadview
+au BufWinEnter *vimrc silent loadview
 
 map <Leader>l :loadview<CR>
 map <Leader>m :mkview<CR>
@@ -157,6 +158,7 @@ set foldlevel=99
 set foldcolumn=3
 map <F10> :set foldmethod=manual<CR>
 
+
 set magic
 set confirm
 set nobackup
@@ -203,6 +205,7 @@ imap <F6> <ESC>:set mouse=v<CR>
 """"""  YouCompleteMe """""  自动补全
 " let g:ycm_autoclose_preview_window_after_completion=1
 map <leader>g  :YcmCompleter GoToDefinitionElseDeclaration<CR>
+nnoremap <leader>jd :YcmCompleter GoTo<CR>
 
 
 """"""  Python-mode """""""""""""""""""""""""""""
