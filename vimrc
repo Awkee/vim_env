@@ -6,7 +6,7 @@
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""" Vundle
+"""""""""""""""" Vundle """"""""""""""""""""""""""""""""""""""""""
 set nocompatible              " be iMproved, required
 filetype off                  " required
 
@@ -35,8 +35,8 @@ call vundle#end()            " required
 filetype plugin indent on    " required
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""" Vundle
 
-" tabs and spaces handling
 
+" tabs and spaces handling
 "set expandtab  " <--此选项自动扩展tab为空格符号,建议不要默认开启
 set tabstop=4
 set softtabstop=4
@@ -94,8 +94,8 @@ imap <C-Left> <ESC>:tabp<CR>
 
 """"""" 自动保存视图""""""""""""""""""""""""""""""""""""""""""""""
 au BufWinLeave *.py silent mkview
-au BufWinLeave .vimrc silent mkview
-au BufWinEnter *.* silent loadview
+au BufWinLeave *vimrc silent mkview
+au BufWinEnter * silent loadview
 
 map <Leader>l :loadview<CR>
 map <Leader>m :mkview<CR>
