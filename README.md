@@ -186,5 +186,9 @@ checking for tgetent()... configure: error: NOT FOUND!
 ```
 
 
+安装ncurse库:
+```
+sudo apt-get install -y libncurses5-dev
+```
 
 
